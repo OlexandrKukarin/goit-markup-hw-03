@@ -32,13 +32,14 @@ img {
   margin: 0;
 }
 .container {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   margin: 0 auto;
   width: 1158px;
   padding: 0 15px;
 }
 /* LOGO */
 .logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -78,7 +79,6 @@ img {
 }
 .navigation {
   display: flex;
-  margin-left: 76px;
   gap: 40px;
 }
 
@@ -140,7 +140,8 @@ img {
   color: var(--white);
 }
 .btn {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   padding: 16px 32px;
   min-width: 169px;
   font-family: "Roboto", sans-serif;
@@ -196,6 +197,7 @@ img {
   margin-bottom: 72px;
 }
 .header-three {
+  margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -257,6 +259,10 @@ img {
   margin-top: 16px;
   color: var(--cloud);
 }
+.logo-foot {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .link {
   text-decoration: none;
 }
@@ -281,6 +287,9 @@ img {
   justify-content: center;
   margin-bottom: 72px;
 }
+.item-prtf {
+  width: calc((100% - 48px) / 3);
+}
 .btn-portfolio {
   margin: 0;
   padding: 12px 24px;
@@ -299,7 +308,7 @@ img {
 .btn-portfolio:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: 0;
+  border: 1px solid transparent;
   color: var(--white);
   background-color: var(--ocean);
 }
